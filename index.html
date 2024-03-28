@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket</title>
 
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <main>
+        <div class="title">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </div>
+        <div class="form-container">
+            <div class="form">
+                <div class="input-name">
+                    <label for="name">Il tuo nome?</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-km">
+                    <label for="kilometers">Quanti km devi percorrere?</label>
+                    <input type="number" id="kilometers">
+                </div>
     
+                <div class="input-age">
+                    <label for="age">Quanti anni hai?</label>
+                    <input type="number" id="age">
+                </div> 
+            </div>
+            <div class="bttn-group">
+                <button type="submit" id="send">Invia</button>
+                <button type="reset">Annulla</button>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="out-title">
+                <h2>ECCO IL TUO BIGLIETTO!</h2>
+            </div>
+            <div class="ticket-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Numero Biglietto</th>
+                            <th>Carrozza</th>
+                            <th>Prezzo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="user-name"></td>
+                            <td id="ticket-number"></td>
+                            <td id="seat"></td>
+                            <td id="finalPrice"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
     <script src="./JS/script.js"></script>
 </body>
 </html>

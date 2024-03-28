@@ -1,5 +1,125 @@
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* COMMON */
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+main {
+    height: 100vh;
+    background: linear-gradient(312deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 23%, rgba(0,212,255,1) 100%);    
+}
+
+ul {
+    list-style-type: none;
+}
+.hide {
+    display: none;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* title */
+.title {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* form */
+.form-container {
+    background-color: white;
+    color: black;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 10px;
+}
+
+.input-km, .input-age, .input-name {
+    display: flex;
+    flex-direction: column;
+    width: calc(80% / 3);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input-km input {
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+.input-age input {
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+.input-name input {
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+/* buttons */
+.bttn-group button{
+    margin: 20px 10px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid rgba(121,9,9,1);
+    border-radius: 25px;
+}
+
+/* PRICE OUTPUT */
+.output-container {
+    background-color: rgba(0,212,255,1);
+    color: white;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    margin-top: 30px;
+    padding: 30px 0;
+    
+}
+.out-title{
+    margin-bottom: 20px;
+}
+
+.ticket-container {
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+}
+
+.ticket-container table {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.ticket-container th {
+    background-color: lightgrey;
+    padding: 20px;
+}
+.ticket-container td {
+    padding: 30px;
 }
